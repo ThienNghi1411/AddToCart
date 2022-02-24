@@ -1,0 +1,154 @@
+/* ProductPage.js (CSS) */
+.product-page {
+  width: 90%;
+  height: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 50px;
+}
+
+/* Product.js (CSS) */
+.singleProduct {
+  max-width: 300px;
+  width: 280px;
+  height: 450px;
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.imgProductCont {
+  position: relative;
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf0e6;
+}
+
+.imgProduct {
+  height: 80%;
+  width: 80%;
+}
+
+.singleProduct:hover {
+  transform: scale(1.1);
+}
+
+.infoProduct {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.cateAndRate {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.category {
+  font-weight: bold;
+  color: #a9a9a9;
+  margin-right: 60px;
+}
+
+.rateStar {
+  color: #7fffd4;
+}
+
+.nameProduct {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.priceProduct {
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+}
+
+.rootPrice {
+  color: #7fffd4;
+  margin-right: 15px;
+  font-weight: bold;
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
+.lastPrice {
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+.hoverBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.active {
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.addToCart {
+  color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: #deb887;
+}
+
+.btnHover {
+  display: flex;
+  width: 40%;
+  padding: 8px 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5%;
+  transition: all 0.2s ease-out;
+}
+
+.title {
+  margin-right: 5px;
+}
+
+.btnHover:hover {
+  transform: scale(1.1);
+}

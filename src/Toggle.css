@@ -1,0 +1,29 @@
+.toggle-cont {
+  height: 50px;
+  width: 100px;
+  background-color: #ccc;
+  border-radius: 100rem;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.toggle-cont.active {
+  background-color: pink;
+}
+
+.spinner {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 100rem;
+  transition: all 0.2s linear;
+}
+
+.spinner.active {
+  transform: translateX(50px);
+}
