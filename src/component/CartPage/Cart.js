@@ -12,9 +12,11 @@ const Cart = () => {
   }, []);
   const getTotal = () => {
     let tmp = 0;
-    JSON.parse(sessionStorage.getItem("cartItem")).forEach((item) => {
-      tmp += item.quantity * item.lastPrice;
-    });
+    if (sessionStorage.getItem("cartItem") !== null) {
+      JSON.parse(sessionStorage.getItem("cartItem")).forEach((item) => {
+        tmp += item.quantity * item.lastPrice;
+      });
+    }
     setTotal(tmp);
   };
 
